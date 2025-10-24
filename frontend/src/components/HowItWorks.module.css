@@ -1,0 +1,203 @@
+.section {
+  padding: 5rem 0;
+  background-color: white;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.titleUnderline {
+  width: 5rem;
+  height: 0.25rem;
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+  margin: 0 auto;
+  border-radius: 9999px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
+}
+
+.accentBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0.25rem;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.accentBar.blue {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.accentBar.purple {
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+}
+
+.accentBar.pink {
+  background: linear-gradient(135deg, #ec4899, #f43f5e);
+}
+
+.iconWrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover .iconWrapper {
+  transform: scale(1.1);
+}
+
+.iconWrapper.blue {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.iconWrapper.purple {
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+}
+
+.iconWrapper.pink {
+  background: linear-gradient(135deg, #ec4899, #f43f5e);
+}
+
+.icon {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  color: #1e293b;
+  margin-bottom: 0.75rem;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.numberBadge {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1rem;
+  opacity: 0.2;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .numberBadge {
+  opacity: 0.3;
+}
+
+.numberBadge.blue {
+  background: linear-gradient(135deg, #2563eb, #06b6d4);
+}
+
+.numberBadge.purple {
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+}
+
+.numberBadge.pink {
+  background: linear-gradient(135deg, #ec4899, #f43f5e);
+}
+
+@media (max-width: 1024px) {
+  .section {
+    padding: 4rem 0;
+  }
+  
+  .title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .header {
+    margin-bottom: 3rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+  }
+  
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  .iconWrapper {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  
+  .icon {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  
+  .numberBadge {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.875rem;
+  }
+}

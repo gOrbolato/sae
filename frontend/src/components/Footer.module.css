@@ -1,0 +1,28 @@
+.footer {
+  background-color: white;
+  border-top: 1px solid #e2e8f0;
+  padding: 2rem 0;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.title {
+  font-size: 0.875rem;
+  color: #475569;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: #64748b;
+}

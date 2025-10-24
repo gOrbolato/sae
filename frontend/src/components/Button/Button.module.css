@@ -1,0 +1,60 @@
+.button {
+  padding: 0.625rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.primary {
+  background-color: #030213;
+  color: white;
+}
+
+.primary:hover {
+  background-color: #1a1a2e;
+  transform: scale(1.02);
+}
+
+.ghost {
+  background-color: transparent;
+  color: #030213;
+}
+
+.ghost:hover {
+  background-color: #f1f5f9;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #2563eb, #9333ea);
+  color: white;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.3);
+}
+
+.gradient:hover {
+  background: linear-gradient(135deg, #1d4ed8, #7c3aed);
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.4);
+  transform: scale(1.05);
+}
+
+.gradientPurple {
+  background: linear-gradient(135deg, #9333ea, #ec4899);
+  color: white;
+  box-shadow: 0 10px 25px rgba(147, 51, 234, 0.3);
+}
+
+.gradientPurple:hover {
+  background: linear-gradient(135deg, #7c3aed, #db2777);
+  box-shadow: 0 15px 35px rgba(147, 51, 234, 0.4);
+  transform: scale(1.02);
+}
+
+@media (max-width: 640px) {
+  .button {
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+  }
+}
